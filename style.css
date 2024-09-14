@@ -1,0 +1,43 @@
+* {
+    font-family: "Comic Sans MS", sans-serif;
+    color: black;
+}
+
+body {
+    background-color: #ffcf40;
+}
+
+body.animated-orange-bg {
+    background-color: #ffcf40;
+    animation: backgroundChange 5s ease-in-out forwards;
+}
+@keyframes backgroundChange {
+    0% {
+        background-color: #ffcf40;
+    }
+    100% {
+        background-color: #f7943c;
+    }
+}
+
+.orange-bg {
+    background-color: #f7943c;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter {
+    transition: transform 0.3s ease;
+}
+.counter:active {
+    transform: scale(0.8);
+}
+
+hr {
+    border-color: black;
+}

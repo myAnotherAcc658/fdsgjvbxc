@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofa</title>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="orange-bg">
+    <div class="center">
+        <h2 id="chosenNumber"></h2>
+        <h3 id="compliment"></h3>
+    </div>
+
+    <script>
+        let chosenNumberElement = document.getElementById("chosenNumber");
+        let complimentElement = document.getElementById("compliment");
+
+        switch (localStorage.getItem("randomNum")) {
+            case null:
+                chosenNumberElement.textContent = "03.03.06";
+                complimentElement.textContent = "Выбранного на прошлой странице числа по какой-то причине не оказалось в памяти, поэтому вместо него здесь прекрасная дата! Хорошие вещи происходят в этот день :3";
+                break;
+            case "228":
+                chosenNumberElement.textContent = "228";
+                complimentElement.textContent = "228 УК РФ - статья про наркотические вещества. Никогда не понимал, зачем они нужны, когда радость можно получать от другого. Вот, например, от тебя радости явно гораздо больше :3";
+                break;
+            case "1337":
+                chosenNumberElement.textContent = "1337";
+                complimentElement.textContent = "1337 означает elite. У меня не было сомнений, что тебе выпадет это число, ведь оно тебе абсолютно подходит :3";
+                break;  
+            case "1488":
+                chosenNumberElement.textContent = "1488";
+                complimentElement.textContent = "Если сложить все цифры в дате 03.03.2006, выйдет 14. А из восьмёрок можно слепить смайлик с очками - 8) - который так же крут, как и ты. Видишь, как ты многогранна, что тебя можно без проблем описать даже самым абсурдным числом? :3";
+                break; 
+            case "52":
+                chosenNumberElement.textContent = "52";
+                complimentElement.textContent = "Не мудрено, что от твоего появления люди радуются даже больше, чем когда случайно обнаруживают 52 в неожиданном месте :3 (52 хаахаха смешно смеёмся)";
+                break; 
+            case "69":
+                chosenNumberElement.textContent = "69";
+                complimentElement.textContent = "В каком-то плане 69 - уникальное, околоидеальное число, ведь если смотреть на него хоть снизу, хоть сверху, всегда увидишь одно и то же. С тобой похожая ситуация - с какой стороны не посмотришь, а везде уникальна и идеальна :3";
+                break; 
+            case "7-8":
+                chosenNumberElement.textContent = "7-8";
+                complimentElement.textContent = "7-8 - самая адекватная комбинация, как завещали Спартак и Гофман. Но у 7-8 лишь одна характеристика \"самая\", а вот твои \"самые\" особенности можно перечислять долго :3";
+                break;
+            case "777":
+                chosenNumberElement.textContent = "777";
+                complimentElement.textContent = "Число 777 говорит об удаче. И нам всем оно подходит, учитывая, что нам выпала возможность познакомиться с тобой :3";
+                break;
+        }
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
