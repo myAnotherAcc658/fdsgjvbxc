@@ -65,8 +65,8 @@ tg.MainButton.setParams({
 });
 tg.SecondaryButton.setParams({
     text: "Рандом. число",
-    color: tg.themeParams.button_color,
-    textColor: tg.themeParams.button_text_color,
+    color: tg.themeParams.bottom_bar_bg_color,
+    textColor: tg.themeParams.button_color,
     has_shine_effect: false,
     positiom: "top",
     is_active: true,
