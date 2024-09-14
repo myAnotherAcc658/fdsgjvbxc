@@ -1,6 +1,10 @@
 const tg = window.Telegram.WebApp;
 tg.expand();
 
+if (Number(localStorage.getItem("page")) > 10) {
+    localStorage.setItem("page", 1)
+}
+
 tg.BackButton.onClick(() => {
     let currentPage = Number(localStorage.getItem("page"));
     
