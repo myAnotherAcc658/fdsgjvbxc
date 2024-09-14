@@ -12,7 +12,7 @@ tg.BackButton.onClick(() => {
     }
 });
 
-let mainButton = tg.MainButton.setParams({
+tg.MainButton.setParams({
     text: "Дальше",
     color: tg.themeParams.button_color,
     textColor: tg.themeParams.button_text_color,
@@ -20,7 +20,7 @@ let mainButton = tg.MainButton.setParams({
     is_active: true,
     is_visible: true
 });
-let randomNumberButton = tg.SecondartyButton.setParams({
+tg.SecondaryButton.setParams({
     text: "Рандом. число",
     color: tg.themeParams.button_color,
     textColor: tg.themeParams.button_text_color,
@@ -70,25 +70,25 @@ tg.MainButton.onClick(() => {
     }
 })
 
-tg.SecondartyButton.onClick(() => {
+tg.SecondaryButton.onClick(() => {
     const funnyNumsArray = ["228", "1337", "1488", "52", "69", "7-8", "777"]
 
     let luckyNumberElement = document.getElementById("luckyNumber");
     const randomNumChosen = getRandomElement(funnyNumsArray);
     localStorage.setItem("randomNum", randomNumChosen);
     luckyNumberElement.textContent = randomNumChosen;
-    mainButton.enable();
+    tg.MainButton.enable();
 })
 
 document.addEventListener('DOMContentLoaded', function() {
     if (window.location.href.endsWith("7.html")) {
-        secondartyButton.show();
+        tg.SecondaryButton.show();
         if (!localStorage.getItem("randomNum")) {
-            mainButton.disable();
+            tg.MainButton.disable();
         }
     } else {
-        secondartyButton.hide();
-        mainButton.enable();
+        tg.SecondaryButton.hide();
+        tg.MainButton.enable();
     }
 });
 
