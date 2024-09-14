@@ -34,38 +34,38 @@ tg.MainButton.onClick(() => {
     page++;
     switch (page) {
         case 1:
-            window.location.href = "/index.html";
+            window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/index.html";
             break;
         case 2:
-            window.location.href = "/2.html"
+            window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/2.html"
             tg.BackButton.show();
             break;
         case 3:
-            window.location.href = "/3.html"
+            window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/3.html"
             tg.BackButton.show();
             break;
         case 4:
-            window.location.href = "/4.html"
+            window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/4.html"
             tg.BackButton.show();
             break;
         case 5:
-            window.location.href = "/5.html"
+            window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/5.html"
             tg.BackButton.show();
             break;
         case 6:
-            window.location.href = "/6.html"
+            window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/6.html"
             tg.BackButton.show();
             break;
         case 7:
-            window.location.href = "/7.html"
+            window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/7.html"
             tg.BackButton.show();
             break;
         case 8:
-            window.location.href = "/8.html"
+            window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/8.html"
             tg.BackButton.show();
             break;
         case 9:
-            window.location.href = "/9.html"
+            window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/9.html"
             break;
     }
 })
