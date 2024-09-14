@@ -1,50 +1,52 @@
 const tg = window.Telegram.WebApp;
 tg.expand();
 
-let page = 1;
+localStorage.setItem("page", 1)
 
 tg.BackButton.onClick(() => {
-    if (page > 1) {
-        page--;
-        switch (page) {
+    let currentPage = Number(localStorage.getItem("page"));
+    if (currentPage > 1) {
+        currentPage--;
+        switch (currentPage) {
             case 1:
-                window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/index.html";
+                window.location.replace("https://myanotheracc658.github.io/fdsgjvbxc/index.html");
                 break;
             case 2:
-                window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/2.html"
+                window.location.replace("https://myanotheracc658.github.io/fdsgjvbxc/2.html");
                 tg.BackButton.show();
                 break;
             case 3:
-                window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/3.html"
+                window.location.replace("https://myanotheracc658.github.io/fdsgjvbxc/3.html");
                 tg.BackButton.show();
                 break;
             case 4:
-                window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/4.html"
+                window.location.replace("https://myanotheracc658.github.io/fdsgjvbxc/4.html");
                 tg.BackButton.show();
                 break;
             case 5:
-                window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/5.html"
+                window.location.replace("https://myanotheracc658.github.io/fdsgjvbxc/5.html");
                 tg.BackButton.show();
                 break;
             case 6:
-                window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/6.html"
+                window.location.replace("https://myanotheracc658.github.io/fdsgjvbxc/6.html");
                 tg.BackButton.show();
                 break;
             case 7:
-                window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/7.html"
+                window.location.replace("https://myanotheracc658.github.io/fdsgjvbxc/7.html");
                 tg.BackButton.show();
                 break;
             case 8:
-                window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/8.html"
+                window.location.replace("https://myanotheracc658.github.io/fdsgjvbxc/8.html");
                 tg.BackButton.show();
                 break;
             case 9:
-                window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/81.html"
+                window.location.replace("https://myanotheracc658.github.io/fdsgjvbxc/81.html");
                 break;
             case 10:
-                window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/9.html"
+                window.location.replace("https://myanotheracc658.github.io/fdsgjvbxc/9.html");
                 break;
         }
+        localStorage.setItem("page", String(currentPage))
     } else {
         tg.BackButton.hide();
     }
@@ -69,46 +71,48 @@ tg.SecondaryButton.setParams({
 });
 
 tg.MainButton.onClick(() => {
-    page++;
-    switch (page) {
+    let currentPage = Number(localStorage.getItem("page"));
+    currentPage++;
+    switch (currentPage) {
         case 1:
-            window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/index.html";
+            window.location.replace("https://myanotheracc658.github.io/fdsgjvbxc/index.html");
             break;
         case 2:
-            window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/2.html"
+            window.location.replace("https://myanotheracc658.github.io/fdsgjvbxc/2.html");
             tg.BackButton.show();
             break;
         case 3:
-            window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/3.html"
+            window.location.replace("https://myanotheracc658.github.io/fdsgjvbxc/3.html");
             tg.BackButton.show();
             break;
         case 4:
-            window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/4.html"
+            window.location.replace("https://myanotheracc658.github.io/fdsgjvbxc/4.html");
             tg.BackButton.show();
             break;
         case 5:
-            window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/5.html"
+            window.location.replace("https://myanotheracc658.github.io/fdsgjvbxc/5.html");
             tg.BackButton.show();
             break;
         case 6:
-            window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/6.html"
+            window.location.replace("https://myanotheracc658.github.io/fdsgjvbxc/6.html");
             tg.BackButton.show();
             break;
         case 7:
-            window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/7.html"
+            window.location.replace("https://myanotheracc658.github.io/fdsgjvbxc/7.html");
             tg.BackButton.show();
             break;
         case 8:
-            window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/8.html"
+            window.location.replace("https://myanotheracc658.github.io/fdsgjvbxc/8.html");
             tg.BackButton.show();
             break;
         case 9:
-            window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/81.html"
+            window.location.replace("https://myanotheracc658.github.io/fdsgjvbxc/81.html");
             break;
         case 10:
-            window.location.href = "https://myanotheracc658.github.io/fdsgjvbxc/9.html"
+            window.location.replace("https://myanotheracc658.github.io/fdsgjvbxc/9.html");
             break;
     }
+    localStorage.setItem("page", String(currentPage))
 })
 
 tg.SecondaryButton.onClick(() => {
