@@ -4,6 +4,9 @@ tg.expand();
 if (Number(localStorage.getItem("page")) > 10) {
     localStorage.setItem("page", 1)
 }
+if (window.location.href == "https://myanotheracc658.github.io/fdsgjvbxc/index.html") {
+    window.location.reload();
+}
 
 tg.BackButton.onClick(() => {
     let currentPage = Number(localStorage.getItem("page"));
