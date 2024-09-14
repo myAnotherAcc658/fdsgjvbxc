@@ -12,7 +12,7 @@ tg.BackButton.onClick(() => {
     }
 });
 
-let mainButton = tg.BottomButton.setParams({
+let mainButton = tg.MainButton.setParams({
     text: "Дальше",
     color: tg.themeParams.button_color,
     textColor: tg.themeParams.button_text_color,
@@ -20,7 +20,7 @@ let mainButton = tg.BottomButton.setParams({
     is_active: true,
     is_visible: true
 });
-let randomNumberButton = tg.BottomButton.setParams({
+let randomNumberButton = tg.SecondartyButton.setParams({
     text: "Рандом. число",
     color: tg.themeParams.button_color,
     textColor: tg.themeParams.button_text_color,
