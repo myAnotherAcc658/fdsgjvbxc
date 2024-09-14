@@ -3,11 +3,7 @@ tg.expand();
 
 tg.BackButton.onClick(() => {
     let currentPage = Number(localStorage.getItem("page"));
-    if (window.location.href.endsWith("index.html") && currentPage != 1) {
-        localStorage.setItem("page", String(1))
-        window.location.replace("https://myanotheracc658.github.io/fdsgjvbxc/index.html");
-        return
-    }
+    
     if (currentPage > 1) {
         currentPage--;
         switch (currentPage) {
@@ -75,11 +71,7 @@ tg.SecondaryButton.setParams({
 
 tg.MainButton.onClick(() => {
     let currentPage = Number(localStorage.getItem("page"));
-    if (window.location.href.endsWith("index.html") && currentPage != 1) {
-        localStorage.setItem("page", String(1))
-        window.location.replace("https://myanotheracc658.github.io/fdsgjvbxc/index.html");
-        return
-    }
+    
     currentPage++;
     switch (currentPage) {
         case 1:
